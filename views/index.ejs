@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Football</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/home-table.css" />
+    <link rel="stylesheet" href="../css/input-modal.css" />
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="header">🏆</div>
+      <a href="#modal" class="plus-button">➕</a>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Logo</th>
+            <th>Club Name</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="emoji">🏴‍☠️</td>
+            <td>Arsenal</td>
+            <td>
+              <button class="action-button edit">✏️</button>
+              <button class="action-button delete">🗑️</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="emoji">🦁</td>
+            <td>Aston Villa</td>
+            <td>
+              <button class="action-button edit">✏️</button>
+              <button class="action-button delete">🗑️</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="emoji">🍒</td>
+            <td>Bournemouth</td>
+            <td>
+              <button class="action-button edit">✏️</button>
+              <button class="action-button delete">🗑️</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="emoji">🍒</td>
+            <td>Bournemouth</td>
+            <td>
+              <button class="action-button edit">✏️</button>
+              <button class="action-button delete">🗑️</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="emoji">🍒</td>
+            <td>Bournemouth</td>
+            <td>
+              <button class="action-button edit">✏️</button>
+              <button class="action-button delete">🗑️</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="emoji">🍒</td>
+            <td>Bournemouth</td>
+            <td>
+              <button class="action-button edit">✏️</button>
+              <button class="action-button delete">🗑️</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="emoji">🍒</td>
+            <td>Bournemouth</td>
+            <td>
+              <button class="action-button edit">✏️</button>
+              <button class="action-button delete">🗑️</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h2>Modal Input</h2>
+        <form action="/clubs/create" method="POST">
+          <input type="text" name="name" placeholder="Enter text..." />
+          <button type="submit">Submit</button>
+        </form>
+        <a href="#" class="close">&times;</a>
+      </div>
+    </div>
+  </body>
+</html>
